@@ -1,96 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Metadata of the Webpage -->
-    <!-- Character-set Metadata -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Viewport Metadata -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Description Metadata-->
-    <meta name="description" content="Portfolio Website" />
-    <!-- Author Metadata -->
-    <meta name="author" content="Aditya Vikram Singh" />
-    <!-- Keyword Metadata -->
-    <meta
-      name="keywords"
-      content="Aditya Singh, Aditya Vikram Singh, Aditya Vikram Singh DPS,
-        Aditya Vikram Singh DPSRKP, Aditya Vikram Singh UMass, Aditya Vikram
-        Singh UMass Amherst, Aditya Vikram Singh New Delhi, Aditya Vikram
-        Singh Amherst, Aditya Vikram Singh ISSDC, Aditya Vikram Singh NASA,
-        Aditya Vikram Singh, Aditya Vikram Singh Website, Aditya V Singh"
-    />
-    <!-- Webpage Logo -->
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <!-- Webpage Title -->
-    <title>Egi Prasetya Wijaya</title>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Egi Prasetya Wijaya — Profil</title>
+<style>
+:root{--bg:#0b1020;--bg2:#121933;--card:#141c38;--bd:#26305a;--tx:#e8ecff;--mu:#9aa6d6;--a1:#00d4ff;--a2:#7c5cff;--ok:#2ee59d;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f6ff;--bg2:#e9edff;--card:#fff;--bd:#d6dcf5;--tx:#141a3a;--mu:#5a6592;--a1:#0a7bd1;--a2:#6a47e6;--ok:#12a36b}}
+:root[data-theme="light"]{--bg:#f4f6ff;--bg2:#e9edff;--card:#fff;--bd:#d6dcf5;--tx:#141a3a;--mu:#5a6592;--a1:#0a7bd1;--a2:#6a47e6;--ok:#12a36b}
+:root[data-theme="dark"]{--bg:#0b1020;--bg2:#121933;--card:#141c38;--bd:#26305a;--tx:#e8ecff;--mu:#9aa6d6;--a1:#00d4ff;--a2:#7c5cff;--ok:#2ee59d}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 "Inter",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:10px;padding:10px 18px;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd);font-size:13px;color:var(--mu)}
+.bar button{margin-left:auto;background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:999px;padding:5px 14px;cursor:pointer;font:inherit}
+.wrap{max-width:900px;margin:0 auto;padding:22px 16px 40px}
+.hero{position:relative;border-radius:22px;padding:34px 26px;overflow:hidden;background:linear-gradient(135deg,#0f2027,#203a43 45%,#2c3e7a);color:#fff;border:1px solid var(--bd)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(50px);opacity:.55}
+.hero:before{width:260px;height:260px;background:#00d4ff;top:-90px;right:-60px}
+.hero:after{width:220px;height:220px;background:#7c5cff;bottom:-90px;left:-40px}
+.hero>*{position:relative;z-index:1}
+.top{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.av{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;font:800 32px/1 ui-monospace,Menlo,monospace;background:linear-gradient(135deg,var(--a1),var(--a2));box-shadow:0 0 0 4px rgba(255,255,255,.18),0 10px 30px rgba(0,0,0,.35)}
+.hero h1{margin:0;font-size:clamp(26px,5.5vw,40px);line-height:1.15;letter-spacing:-.5px}
+.role{margin:6px 0 0;font:600 15px ui-monospace,Menlo,monospace;color:#8fe9ff;min-height:24px}
+.cur{display:inline-block;width:2px;height:1em;background:#8fe9ff;vertical-align:-2px;margin-left:2px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.pill{padding:6px 13px;border-radius:999px;font-size:13px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(4px)}
+.pill.g{background:rgba(46,229,157,.18);border-color:rgba(46,229,157,.5);color:#8bffd0}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{padding:9px 18px;border-radius:10px;font-weight:600;font-size:14px;color:#fff;text-decoration:none;background:linear-gradient(135deg,var(--a1),var(--a2));box-shadow:0 6px 18px rgba(0,0,0,.3);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.o{background:transparent;border:1px solid rgba(255,255,255,.4);box-shadow:none}
+section{margin-top:34px}
+h2{font-size:21px;margin:0 0 14px;display:flex;align-items:center;gap:10px}
+h2:after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--bd),transparent)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:18px 20px}
+.term{background:#070b17;color:#cfe9ff;border:1px solid var(--bd);border-radius:14px;padding:16px 18px;font:13.5px/1.75 ui-monospace,Menlo,monospace;overflow-x:auto}
+.term .p{color:#2ee59d}.term .c{color:#8a96c9}
+.tl{position:relative;padding-left:26px}
+.tl:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--a1),var(--a2))}
+.it{position:relative;margin-bottom:14px}
+.it:before{content:"";position:absolute;left:-26px;top:20px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--a1)}
+.it h3{margin:0;font-size:17px}
+.it .co{color:var(--a1);font-weight:600;font-size:14px}
+.it .dt{color:var(--mu);font-size:13px;margin:2px 0 6px}
+.it ul{margin:6px 0 0;padding-left:20px;color:var(--mu);font-size:14.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:7px 14px;border-radius:10px;font-size:13.5px;font-weight:600;background:var(--bg2);border:1px solid var(--bd);transition:all .15s}
+.chip:hover{border-color:var(--a1);transform:translateY(-2px)}
+.chip b{color:var(--a1)}
+.todo{color:var(--mu);font-style:italic}
+.foot{margin-top:40px;text-align:center;color:var(--mu);font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="bar"><span>🔍 Simulasi profil · Egi Prasetya Wijaya</span><button id="tg">☀️ / 🌙 Tema</button></div>
+<div class="wrap">
 
-    <!-- Import CSS: Main Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
-
-  <body>
-    <div id="particles-js">
-      <div class="header">
-        <h1>
-          <span class="site-title">Egi Prasetya Wijaya</span>
-          <div class="site-description"><p id="typed"></p></div>
-          <span class="site-description"
-            >Programmer • Graphic Designer</span
-          >
-        </h1>
-        <div class="header-icons">
-          <a
-            aria-label="My LinkedIn Profile"
-            target="_blank"
-            href="https://www.linkedin.com/in/egi-prasetya-wijaya/"
-          >
-            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="My Github Profile"
-            target="_blank"
-            href="https://github.com/egipw"
-          >
-            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="My Résumé"
-            target="_blank"
-            href="https://drive.google.com/file/d/1mA36YBvgulw5awR0eETwpdpKB3pDqEA8/view?usp=sharing"
-          >
-            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="Send Email"
-            href="mailto:egipw.id@gmail.com"
-            target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
-        </div>
-      </div>
+<div class="hero">
+  <div class="top">
+    <div class="av">EW</div>
+    <div>
+      <h1>Egi Prasetya Wijaya</h1>
+      <div class="role"><span id="ty"></span><span class="cur"></span></div>
     </div>
+  </div>
+  <div class="meta">
+    <span class="pill">📍 Jakarta, Indonesia</span>
+    <span class="pill">🎓 Politeknik Negeri Lampung</span>
+    <span class="pill g">● Terbuka untuk peluang baru</span>
+  </div>
+  <div class="btns">
+    <a class="btn" href="mailto:egipw.id@gmail.com">✉ egipw.id@gmail.com</a>
+    <a class="btn o" href="#">in LinkedIn</a>
+    <a class="btn o" href="https://github.com/egipw">GitHub · egipw</a>
+  </div>
+</div>
 
-    <!-- Import JS: Particles Theme -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Import JS: Sweet Scroll -->
-    <script src="./assets/js/sweet-scroll.min.js"></script>
-    <!-- Import JS: Google Analytics -->
-    <script src="./assets/js/google-analytics.js"></script>
-    <!-- Import JS: Typed.js -->>
-    <script src="./assets/js/typed.js"></script>
-    <script>
-      var typed = new Typed("#typed", {
-        strings: ["> Programmer", "> Graphic Designer"],
-        typeSpeed: 80,
-        backSpeed: 80,
-        backDelay: 1800,
-        loop: true,
-        showCursor: false,
-        contentType: null,
-      });
-    </script>
-    <!-- Import JS: Main Script -->
-    <script src="./assets/js/main.js"></script>
-  </body>
+<section>
+<h2>👨‍💻 Tentang Saya</h2>
+<div class="term"><span class="p">$</span> whoami
+<span class="c">&gt; Egi Prasetya Wijaya — IT Support Datacenter</span>
+<span class="p">$</span> cat background.txt
+<span class="c">&gt; Manajemen Informatika • Data Analyst • DBA • Datacenter Support</span>
+<span class="p">$</span> cat goal.txt
+<span class="c">&gt; Survive</span></div>
+</section>
+
+<section>
+<h2>💼 Riwayat Pekerjaan</h2>
+<div class="tl">
+  <div class="it card"><h3>IT Support Datacenter</h3><div class="co">PT Cybertechtonic Pratama</div><div class="dt">[Februari 2022 – Sekarang]</div><ul><li>[Tanggung jawab 1]</li><li>[Tanggung jawab 2]</li></ul></div>
+  <div class="it card"><h3>Database Administrator</h3><div class="co">Politeknik Negeri Lampung</div><div class="dt">[September 2018 – Oktober 2019]</div><ul><li>Mengelola Website Kampus & Jurusan</li><li>Membuat Aplikasi</li></ul></div>
+  <div class="it card"><h3>Data Analyst (Magang)</h3><div class="co">PT Aerta Air Jakarta</div><div class="dt">[Februari 2018 – April 2018]</div><ul><li>Mencari Pelanggan Potensial</li><li>Membuat Aplikasi Pengarsipan</li></ul></div>
+</div>
+</section>
+
+<section class="grid" style="margin-top:34px">
+  <div>
+    <h2>🎓 Pendidikan</h2>
+    <div class="card"><b>Politeknik Negeri Lampung</b><br>D3 Manajemen Informatika<br><span class="todo">[2015 – 2018] </span></div>
+  </div>
+  <div>
+    <h2>🏆 Sertifikasi</h2>
+    <div class="card"><div>✅ <span class="todo">[Nama sertifikasi] — [Penerbit], [tahun]</span></div><div>✅ <span class="todo">[Nama sertifikasi] — [Penerbit], [tahun]</span></div><div>⏳ <span class="todo">[Sedang ditempuh]</span></div></div>
+  </div>
+</section>
+
+<section>
+<h2>🧰 Skill &amp; Tools</h2>
+<div class="chips">
+  <span class="chip"><b>▸</b> Linux</span><span class="chip"><b>▸</b> Windows Server</span><span class="chip"><b>▸</b> Networking</span>
+  <span class="chip"><b>▸</b> SQL / Database</span><span class="chip"><b>▸</b> Data Analysis</span><span class="chip"><b>▸</b> Monitoring</span>
+</div>
+</section>
+
+<div class="foot">Simulasi tampilan. Isi bertanda [ ] masih placeholder.</div>
+</div>
+<script>
+(function(){
+var L=["IT Support Datacenter","Database & Server Operations","Data Analysis Background","Terbuka untuk peluang baru"];
+var el=document.getElementById("ty"),i=0,j=0,del=false;
+function tick(){var t=L[i];el.textContent=t.slice(0,j);
+if(!del&&j<t.length){j++;setTimeout(tick,60)}
+else if(!del){del=true;setTimeout(tick,1300)}
+else if(j>0){j--;setTimeout(tick,28)}
+else{del=false;i=(i+1)%L.length;setTimeout(tick,300)}}
+tick();
+var root=document.documentElement,dark=true;
+try{dark=!window.matchMedia("(prefers-color-scheme: light)").matches}catch(e){}
+function ap(){root.setAttribute("data-theme",dark?"dark":"light")}
+ap();
+document.getElementById("tg").onclick=function(){dark=!dark;ap()};
+})();
+</script>
+</body>
 </html>
